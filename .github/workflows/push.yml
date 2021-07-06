@@ -1,0 +1,25 @@
+---
+name: Demo Tracee Action
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - user: afdesk/tracee-epbf-builder-action@main
+        with:
+          kernelrelease: '4.18-rc4'
+          probe: 'trace.ebpf.o'
+
+      - run: mkdir -p probes
+
+      - uses: actions/upload-artifact@v2
+        with:
+          path: probes/trace.ebpf.o
+
