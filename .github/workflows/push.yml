@@ -19,4 +19,5 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
+          name: trace.ebpf.o       
           path: trace.ebpf.o
