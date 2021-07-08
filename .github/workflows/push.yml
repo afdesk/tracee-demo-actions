@@ -17,9 +17,7 @@ jobs:
           kernelrelease: '4.18-rc4'
           probe: 'trace.ebpf.o'
 
-      - run: mkdir -p probes
-
       - uses: actions/upload-artifact@v2
         with:
-          path: probes/trace.ebpf.o
-
+          name: dist-without-markdown
+          path: trace.ebpf.o
