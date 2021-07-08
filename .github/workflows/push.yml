@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - uses: afdesk/tracee-epbf-builder-action@main
+      - uses: afdesk/tracee-building-action@main
         with:
           kernelrelease: '4.18-rc4'
           probe: 'trace.ebpf.o'
