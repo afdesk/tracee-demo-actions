@@ -14,7 +14,7 @@ jobs:
 
       - uses: afdesk/tracee-building-action@main
         with:
-          kernelrelease: '5.8'
+          kernelrelease: '5.4'
           probe: 'trace.ebpf.o'
 
       - uses: actions/upload-artifact@v2
