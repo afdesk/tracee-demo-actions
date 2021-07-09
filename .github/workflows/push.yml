@@ -6,7 +6,7 @@ on:
     branches: [main]
     
 env: 
-  KERNELVERSION: '5.8'
+  KERNELVERSION: '5.4'
 
 jobs:
   build:
