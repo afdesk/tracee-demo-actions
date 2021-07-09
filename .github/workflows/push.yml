@@ -14,10 +14,10 @@ jobs:
 
       - uses: afdesk/tracee-building-action@main
         with:
-          kernelrelease: '4.15'
-          probe: 'trace.ebpf.4.15.o'
+          kernelrelease: '4.15.0'
+          probe: 'trace.ebpf.4.15.0.o'
 
       - uses: actions/upload-artifact@v2
         with:
-          name: trace.ebpf.4.15.o       
-          path: trace.ebpf.4.15.o
+          name: trace.ebpf.4.15.0.o       
+          path: trace.ebpf.4.15.0.o
