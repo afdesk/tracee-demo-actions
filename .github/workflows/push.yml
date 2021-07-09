@@ -25,5 +25,4 @@ jobs:
       - uses: ncipollo/release-action@v1
         with:
           artifacts: "release.tar.gz,trace.ebpf.o"
-          bodyFile: "body.md"
           token: ${{ secrets.GITHUB_TOKEN }}
